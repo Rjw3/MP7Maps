@@ -8,22 +8,22 @@
     android:orientation="vertical"  >
 
     <Button
-        android:id="@+id/btnFindPath"
+        android:id="@+id/getDirections"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Get Time and Directions" />
 
     <EditText
+        android:id="@+id/start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etOrigin"
         android:hint="Starting Location" />
 
     <EditText
+        android:id="@+id/end"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Destinated Location"
-        android:id="@+id/etDestination" />
+        android:hint="Destinated Location" />
 
     <LinearLayout
         android:layout_width="match_parent"
