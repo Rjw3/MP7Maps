@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  >
+
+    <Button
+        android:id="@+id/btnFindPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Time and Directions" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etOrigin"
+        android:hint="Starting Location" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Destinated Location"
+        android:id="@+id/etDestination" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/Distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="miles" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/busTime"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="minutes via Bus" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/walkTime"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="minutes via Walk" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+</LinearLayout>
